@@ -178,6 +178,7 @@ public class PaymentServiceImp implements PaymentService {
         transaction.setAdjustedAmount(adjustedAmount);
         transaction.setStatus(PaymentStatusEnum.FAILED);
 
+        //Transaction failed persisted
         paymentPersistenceService.saveFailedTransaction(transaction);
 
         return transaction;
