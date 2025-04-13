@@ -29,7 +29,7 @@ public class UserAuthController {
         return userAuthService.usersSignUp(registrationDto);
     }
 
-    @PostMapping("sigin")
+    @PostMapping("signin")
     public AppResponse<String> signIn(@Valid @RequestBody AuthenticationDto authenticationDto){
         return userAuthService.signIn(authenticationDto);
     }

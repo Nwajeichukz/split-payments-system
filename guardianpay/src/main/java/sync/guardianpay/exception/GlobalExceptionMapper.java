@@ -29,6 +29,7 @@ public class GlobalExceptionMapper extends ResponseEntityExceptionHandler {
                 HttpStatus.BAD_REQUEST);
     }
 
+
     @Override
     protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
         return new ResponseEntity<Object>("PLEASE CHANGE HTTP RETURN TYPE", HttpStatus.NOT_FOUND);
